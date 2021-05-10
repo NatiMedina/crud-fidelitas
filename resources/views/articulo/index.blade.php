@@ -1,7 +1,6 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
 @section('contenido')
-
 
 <h1 class="pt-5 pb-5 text-center">Administradora de Inventario</h1>
         <table class="table table-hover table-striped">
@@ -21,8 +20,8 @@
                     <td class="align-middle">{{$articulo->nombre}}</td>
                     <td class="align-middle">{{$articulo->cantidad}}</td>
                     <td class="align-middle d-flex flex-row" style="text-align: center;">
-                        <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-warning"><i class="fas fa-edit"></i></a>
                         <form action="/articulos/{{$articulo->id}}" method="post">
+                            <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-warning"><i class="fas fa-edit"></i></a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
