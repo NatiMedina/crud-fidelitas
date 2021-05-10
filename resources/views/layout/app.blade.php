@@ -21,8 +21,5 @@
     <div class = "container">
         @yield('contenido')
     </div>
-
-
-    
 </body>
 </html>
