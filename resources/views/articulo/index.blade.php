@@ -8,7 +8,7 @@
             <thead>
                 <tr>
                     <th scope="col" class="align-middle" style="width: 7%">Id</th>
-                    <th scope="col" class="align-middle" style="width: 60%">Articulo</th>
+                    <th scope="col" class="align-middle" style="width: 60%">Artículo</th>
                     <th scope="col" class="align-middle" style="width: 23%">Cantidad</th>
                     <th scope="col" class="align-middle" style="width: 10%;text-align: center;"><a href="articulos/create" type="button" class="btn btn-primary"> Agregar </a>
                     </th>
