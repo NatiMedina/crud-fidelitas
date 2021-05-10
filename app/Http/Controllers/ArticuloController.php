@@ -77,7 +77,12 @@ class ArticuloController extends Controller
      */
     public function update(Request $request, Articulo $articulo)
     {
-        //
+        $articulo->nombre = $request->get('nombre');
+        $articulo->descripcion = $request->get('descripcion');
+        $articulo->cantidad = $request->get('cantidad');
+
+        $articulo->save();
+        return redirect('/articulos');
     }
 
     /**
