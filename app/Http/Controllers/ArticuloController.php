@@ -65,7 +65,7 @@ class ArticuloController extends Controller
      */
     public function edit(Articulo $articulo)
     {
-        
+        return view('articulo.edit')->with('articulo', $articulo);
     }
 
     /**
