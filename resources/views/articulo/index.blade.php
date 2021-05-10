@@ -21,7 +21,7 @@
                     <td class="align-middle">{{$articulo->nombre}}</td>
                     <td class="align-middle">{{$articulo->cantidad}}</td>
                     <td class="align-middle" style="text-align: center;">
-                        <a href={{route('articulos', $articulo->id)}} class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                        <a href="{{url("articulos/{$articulo->id)}"}}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
                         <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
