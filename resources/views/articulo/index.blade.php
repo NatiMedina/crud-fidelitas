@@ -22,7 +22,11 @@
                     <td class="align-middle">{{$articulo->cantidad}}</td>
                     <td class="align-middle d-flex flex-row" style="text-align: center;">
                         <a href="/articulos/{{$articulo->id}}/edit" class="btn btn-warning"><i class="fas fa-edit"></i></a>
-                        <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        <form action="/articulos/{{$articulo->id}}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        </form>
                     </td>
                 </tr>
                 @endforeach        
