@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('contenido')
-<h1 class="pt-5 pb-5 text-center">Agregar Artículo</h1>
 <form action="/articulos" method="POST">
+    <h1 class="pt-5 pb-5 text-center">Agregar Artículo</h1>
 @csrf
     <div class="form-group">
         <label for="nombre">Nombre</label>
