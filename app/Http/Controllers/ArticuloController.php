@@ -37,7 +37,6 @@ class ArticuloController extends Controller
     public function store(Request $request)
     {
         $articulos = new Articulo();
-        @dd($request);
         $articulos->nombre = $request->get('nombre');
         $articulos->descripcion = $request->get('descripcion');
         $articulos->cantidad = $request->get('cantidad');
